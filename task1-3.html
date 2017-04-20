@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*重置样式*/
+			body,p,h1,h2,h3,h4,h5,h6,dl,dt{margin: 0;}
+			ul,ol{padding:0;margin: 0;list-style: none;}
+			img{border: 0;}
+			
+			body{height: 700px;}
+			div{padding: 20px;border: 1px solid #999;}
+			.box{height: 563px;background: #eee;margin: 20px 20px 0 20px; width: 94.2%;}
+			.box,.left,.center{float: left;}
+			
+			.left{background:white;width: 198px;text-align: center;}
+			.team{width: 80px;background: #dfdfdf;height: 80px;display:inline-block;}
+			#unique{display: inline-block;right: 25px;}
+			
+			.center{background: white;width: 62.07%;margin: 0 1.575%;}
+			
+			.right{width:118px;background: white;text-align: center;float: right;}
+			.person{width: 78px;background: #dfdfdf;height: 78px;margin:20px auto;}
+			.person1{width: 78px;background: #dfdfdf;height: 78px;margin:0 auto;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">
+				<div class="team">
+					<p>团队logo</p>
+					<p>80x80</p>
+				</div>
+				<p id="unique">团队名称</p>
+			</div>
+			
+			<div class="center">
+				<p>relative与absolute的主要区别：</p>
+				<p>首先，是上面已经提到过的在正常流中的位置存在与否。</p>
+				<p>其次，relative定位的层总是相对于其最近的父元素，无论其父元素是何种定位方式。</p>
+				<p>因此，对于absolute定位的层总是相对于其最近的定义为absolute或relative的父层，
+				而这个父层并不一定是其直接父层。如果其父层中都未定义absolute或relative，则其将相对body进行定位</p>
+				<p>另外</p>
+				<p>除top、left、right、bottom定位外，margin属性值的定义也符合上述规则</p>
+			</div>
+			
+			<div class="right">
+				<div class="person1">
+					<p>个人logo</p>
+					<p>80x80</p>
+				</div>
+				<div class="person">
+					<p>个人logo</p>
+					<p>80x80</p>
+				</div>
+				<div class="person">
+					<p>个人logo</p>
+					<p>80x80</p>
+				</div>
+				<div class="person1">
+					<p>个人logo</p>
+					<p>80x80</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
